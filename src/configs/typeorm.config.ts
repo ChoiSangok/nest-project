@@ -8,5 +8,5 @@ export const typeORMConfig: TypeOrmModuleOptions = {
   password: 'choi6882@',
   database: 'Board-app', // database 이름
   entities: [__dirname + '/../**/*.entity.{js,ts}'], // 사용할 entity의 클래스명
-  synchronize: true,
+  synchronize: false,
 };
