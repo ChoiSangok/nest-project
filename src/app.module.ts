@@ -5,9 +5,6 @@ import { BoardRepository } from './boards/board.repository';
 import { BoardsController } from './boards/boards.controller';
 import { BoardsService } from './boards/boards.service';
 import { AuthModule } from './auth/auth.module';
-import { AuthController } from './auth/auth.controller';
-import { UserRepository } from './auth/user.repository';
-import { AuthService } from './auth/auth.service';
 
 @Module({
   imports: [TypeOrmModule.forRoot(typeORMConfig), AuthModule], // Include AuthModule in imports
