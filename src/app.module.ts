@@ -10,8 +10,8 @@ import { UserRepository } from './auth/user.repository';
 import { AuthService } from './auth/auth.service';
 
 @Module({
-  imports: [TypeOrmModule.forRoot(typeORMConfig), AuthModule],
-  controllers: [BoardsController, AuthController],
-  providers: [BoardRepository, BoardsService, UserRepository, AuthService],
+  imports: [TypeOrmModule.forRoot(typeORMConfig), AuthModule], // Include AuthModule in imports
+  controllers: [BoardsController],
+  providers: [BoardRepository, BoardsService],
 })
 export class AppModule {}
